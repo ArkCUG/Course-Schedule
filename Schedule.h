@@ -5,9 +5,11 @@ using namespace std;
 class Schedule{
 private:
     vector<Course>table;
+    vector<vector<Course>>buffer;
 public:
     void Insert(string name,Duration time,string position,vector<int>& schedule);
     void Sort();
+    void Show();
 };
 
 void Schedule::Insert(string name,Duration time,string position,vector<int>& schedule){
