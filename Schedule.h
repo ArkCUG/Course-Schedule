@@ -10,6 +10,9 @@ public:
     void Insert(string name,Duration time,string position,vector<int>& schedule);
     void Sort();
     void Show();
+    void encodeToFile();
+protected:
+    void readFromFile();
 };
 
 void Schedule::Insert(string name,Duration time,string position,vector<int>& schedule){
